@@ -4,7 +4,7 @@
 // Карусель из 3-х постов
 function getFeeds_carousel($url) {
 
-    $url = "http://news.yandex.ru/gadgets.rss";
+    $url = "http://news.yahoo.com/gadgets.rss";
     $content = file_get_contents($url);
     $items = new SimpleXmlElement($content);
     $today = date("j. n. Y");
@@ -41,7 +41,7 @@ function getFeeds_carousel($url) {
 
 function getFeeds_popular($url) {
 
-    $url = "http://news.yandex.ru/gadgets.rss";
+    $url = "http://news.yahoo.com/gadgets.rss";
     $content = file_get_contents($url);
     $items = new SimpleXmlElement($content);
     $today = date("j. n. Y");
@@ -77,13 +77,13 @@ function getFeeds_popular($url) {
     }
 
 }
-//echo getFeeds('https://news.yandex.ru/gadgets.rss');
+//echo getFeeds('https://news.yahoo.com/gadgets.rss');
 
 // Трендовые ппосты 4-шт
 function getFeeds_trend($url)
 {
 
-    $url = "http://news.yandex.ru/gadgets.rss";
+    $url = "http://news.yahoo.com/gadgets.rss";
     $content = file_get_contents($url);
     $items = new SimpleXmlElement($content);
     $today = date("j. n. Y");
